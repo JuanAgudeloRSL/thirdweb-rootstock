@@ -1,36 +1,53 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore node_modules directory
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
+# Ignore any .DS_Store files created by macOS
+.DS_Store
+
+# Ignore any .vscode directory and its contents
+.vscode/
+
+# Ignore any .idea directory and its contents
+.idea/
+
+# Ignore any .cache directory and its contents
+.cache/
+
+# Ignore any .eslintcache file
+.eslintcache
+
+# Ignore any .npmrc file
+.npmrc
+
+# Ignore any .yarnrc file
+.yarnrc
+
+# Ignore any .yarn directory and its contents
+.yarn/
+
+# Ignore any .pnp.js file created by pnpm
 .pnp.js
-.yarn/install-state.gz
 
-# testing
-/coverage
+# Ignore any .pnp.cjs file created by pnpm
+.pnp.cjs
 
-# next.js
-/.next/
-/out/
+# Ignore any .pnp.* file created by pnpm
+.pnp.*
 
-# production
+# Ignore any .parcel-cache directory and its contents
+.parcel-cache/
+
+# Ignore any build artifacts
 /build
 
-# misc
-.DS_Store
-*.pem
+# Ignore any coverage reports
+/coverage
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Ignore any .log files
+*.log
 
-# local env files
-.env*.local
+# Ignore any temporary files or directories
+*.tmp
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Ignore all environment variables except for .env.example
+!.env.local
